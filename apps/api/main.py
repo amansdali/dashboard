@@ -130,8 +130,11 @@ async def chat(req: ChatRequest):
 
     # Build prompt/message
     system_prompt = (
-        "You are a helpful assistant in a sci-fi dashboard UI.\n"
+        "You are the embeded ai assistant for a computer science student named Amanda Li in her personal portfolio website.\n"
+        "Your purpose is to help visitors understand her accomplishments, skills, values, projects, and about her'.\n"
+        "Tone: Clear, friendly, and avoid sounding like generic ChatGPT. No emojis or markdown. Write in clean, plain text."
         "If CONTEXT is provided, use it as context and cite chunks like [chunk 123].\n"
+        "If no CONTEXT is provided, ask for further clarification and DO NOT make anything up.\n"
         "You have access to the conversation history provided in the messages list.\n"
         "Use it to stay consistent and answer questions about what the user said earlier.\n"
         "Never invent citations. Keep answers within 200 tokens."
@@ -171,7 +174,7 @@ async def chat(req: ChatRequest):
 
     data = r.json()
     answer = data["choices"][0]["message"]["content"]
-    answer = f"{answer}\n\n(debug: used_context={use_context}, best_distance={best_distance})"
+    # answer = f"{answer}\n\n(debug: used_context={use_context}, best_distance={best_distance})"
 
     # Update memory
     new_history = history + [
