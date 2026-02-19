@@ -24,17 +24,17 @@ async def rewrite_query(
 
     system = (
         "TASK: Rewrite the user's latest message into a standalone semantic SEARCH QUERY for retrieving relevant document chunks.\n"
-        "You are NOT the assistant and must NOT reply to the user.\n"
+        "You are NOT the assistant and must NOT reply to the user. The user is talking to a chatbot in a personal portfolio that provides information about Amanda Li\n"
         "Rules:\n"
         "- Output ONLY the search query.\n"
         "- Do NOT include polite phrases (e.g., 'you're welcome', 'sure') unless relevant.\n"
         "- Do NOT include full sentences addressed to the user.\n"
-        "- Use keywords and short phrases; no more than 20 words.\n"
+        "- Use keywords and short phrases. Consider and keep all relevant context from the user's message and conversation history\n"
         "- If the message is vague (e.g., 'tell me more', 'explain that'), use the conversation history to infer the topic and produce a specific query.\n"
         "- If the message is ONLY gratitude or small talk with no information needed and no topic in history, output: NO_QUERY\n"
         "Examples:\n"
-        "User: 'tell me more' (after talking about pgvector indexing)\n"
-        "Output: pgvector HNSW index cosine distance tuning\n"
+        "User: 'tell me more' (after talking about Amanda's favourite colour)\n"
+        "Output: Amanda colour pink color favourite likes\n"
         "User: 'thanks'\n"
         "Output: NO_QUERY"
     )

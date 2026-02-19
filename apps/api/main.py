@@ -127,7 +127,8 @@ async def chat(req: ChatRequest):
         "If no CONTEXT is provided, ask for further clarification and DO NOT make anything up.\n"
         "You have access to the conversation history provided in the messages list.\n"
         "Use it to stay consistent and answer questions about what the user said earlier.\n"
-        "Never invent citations. Keep answers within 200 tokens."
+        "Never invent citations. Keep answers within 200 tokens.\n"
+        "NEVER make anything up. Avoid hallucinations."
     )
 
     messages = [{"role": "system", "content": system_prompt}]
