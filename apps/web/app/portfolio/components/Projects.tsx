@@ -102,15 +102,6 @@ export default function Projects() {
                     <p className="link-text">github.com/amansdali</p>
                 </a>
             </div>
-            <p className="body">and here is some vector art I have done</p>
-            <p className="body"> (scroll --&gt;) </p>
-            <div id="artwork-container">
-                <Image src="/svgs/portrait.svg" alt="vector art of a woman" width={300} height={300} className="art" />
-                <Image src="/images/still_life.png" alt="vector art of a still life scene, as a png" width={300} height={300} className="art" />
-                <Image src="/svgs/leaf.svg" alt="vector art of leaf" width={300} height={300} className="art" />
-                <Image src="/svgs/card1.svg" alt="vector art of playing card" width={300} height={300} className="art" />
-                <Image src="/svgs/card2.svg" alt="vector art of playing card" width={300} height={300} className="art" />
-            </div>
             <div className="small-arrow-divider">
                 <a href="#contact-section" aria-label="Navigate to contact section">
                     <svg className="small-arrow" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">

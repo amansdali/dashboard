@@ -5,8 +5,8 @@ export default function About(){
             <h2 className="header-2">about me</h2>
             <p className="body-small">
                 Welcome to my portfolio website!<br/><br/>
-                I am a second year student at the University of Toronto, pursuing a computer science specialist
-                and statistics major.<br/><br/>
+                I am a third year student at the University of Toronto, pursuing a computer science specialist
+                and statistics major, with focuses in Artificial Intelligence and Game Design.<br/><br/>
                 I am passionate about learning new skills to bring innovative ideas to life, combining logic and
                 creativity to build software that is interesting, useful, and fun.<br/><br/>
                 Continue scrolling down to learn more about my skills, projects, and contact information.
